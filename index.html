@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I am Sorry</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;600&family=Cinzel:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <div id="intro-screen" onclick="revealMessage()">
+        <div class="intro-content">
+            <h2 class="sub-title">A Message From Heart</h2>
+            <h1 class="main-title">SORRY PRIYO</h1>
+            <p class="blink-text">CLICK TO OPEN</p>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div class="premium-card">
+            <p class="bengali-msg">
+                জানি রাগ করে আছেন, কিন্তু আপনার ওই নীরবতা আমার একদম সহ্য হচ্ছে না।
+            </p>
+            
+            <div class="audio-section">
+                <span>LISTEN TO ME</span>
+                <audio id="sorryVoice" controls>
+                    <source src="your-voice.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            
+            <button class="reset-btn" onclick="location.reload()">SEE AGAIN</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
